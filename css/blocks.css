@@ -43,6 +43,7 @@ li.plot > span.t {
 
 li.dataset > span.b,
 li.transform > span.b {
+    z-index: 1;
     background-color: inherit;
     border-bottom: 1px solid rgba(0,0,0,.125);
     border-left: 1px solid rgba(0,0,0,.125);
