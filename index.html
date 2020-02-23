@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/Sortable.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 block">
+                <ul id="block" class="list-group">
+                    <li class="dataset list-group-item">Iris dataset</li>
+                    <li class="transform list-group-item">
+                        Summarize
+                        <input type="text" id="summarize-column" name="summarize-function">
+                        <select id="summarize-function">
+                            <option value="count">count</option>
+                            <option value="max">max</option>
+                            <option value="min">min</option>
+                        </select>
+                    </li>
+                    <li class="plot list-group-item">
+                        Bar
+                        <input type="text" id="bar_x_axis" name="bar_x_axis">
+                        <input type="text" id="bar_y_axis" name="bar_y_axis">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-4 code">
+                <ul id="code">
+                    <li class="start list-group-item">Code starts here</li>
+                    <li class="start list-group-item">Code ends here</li>
+                </ul>
+            </div>
+
+            <div class="col-4 output">col-4</div>
+        </div>
+    </div>
+
+    <script src="js/sortable-blocks.demo.js"></script>
+</body>
+
+</html>

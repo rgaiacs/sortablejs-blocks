@@ -1,0 +1,28 @@
+div.block {
+    background-color: darkgray;
+}
+
+div.code {
+    background-color: whitesmoke;
+}
+
+div.output {
+    background-color: lightgray;
+}
+
+li.dataset {
+    background-color: yellow;
+}
+
+li.transform {
+    background-color: blue;
+}
+
+li.plot {
+    background-color: green;
+}
+
+input[type="text"],
+select {
+    width: 2em;
+}

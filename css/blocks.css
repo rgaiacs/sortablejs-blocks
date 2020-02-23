@@ -1,0 +1,88 @@
+li.dataset {
+    background-color: lightyellow;
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    padding-top: 2rem;
+    border: 1px solid rgba(0,0,0,.125);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+li.transform {
+    background-color: lightblue;
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+li.plot {
+    background-color: lightgreen;
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+li.transform > span.t,
+li.plot > span.t {
+    background-color: inherit;
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-left: 1px solid rgba(0,0,0,.125);
+    transform: rotate(45deg);
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: -1rem;
+    left: 2rem;
+    border-radius: 4rem;
+}
+
+li.dataset > span.b,
+li.transform > span.b {
+    background-color: inherit;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-left: 1px solid rgba(0,0,0,.125);
+    transform: rotate(-45deg);
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 2rem;
+    border-radius: 4rem;
+}
+
+li.transform > ul {
+    display: inline-block;
+}
+
+li.operation {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: lightpink;
+    margin: 0px;
+    list-style: none;
+}
+
+li.operation.empty {
+    background-color: white;
+}
+
+li.operation > span.l {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 1rem;
+    left: -0.5rem;
+    border-radius: 2rem;
+    background-color: inherit;
+}
+
+li.transform label,
+li.plot label {
+    min-width: 3rem;
+}
